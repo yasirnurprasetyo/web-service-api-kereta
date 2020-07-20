@@ -1,9 +1,8 @@
 <?php
+use Restserver\Libraries\REST_Controller;
+require (APPPATH.'/libraries/REST_Controller.php');
 
-if(!defined('BASEPATH'))
-    exit('No direct script access allowed');
-
-class Kereta extends Restserver\Libraries\REST_Controller{
+class Kereta extends REST_Controller{
 
     //Panggil Kereta
     function __construct(){

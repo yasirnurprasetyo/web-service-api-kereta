@@ -1,6 +1,9 @@
 <?php
 
-class Auth extends Restserver\Libraries\REST_Controller {
+use Restserver\Libraries\REST_Controller;
+require (APPPATH.'/libraries/REST_Controller.php');
+
+class Auth extends REST_Controller {
 
     //Panggil Class AuthModel
     function __construct(){

@@ -1,8 +1,7 @@
 <?php
-if (!defined('BASEPATH'))
-    exit('No direct access allowed');
-
-class Transaksi extends Restserver\Libraries\REST_Controller{
+use Restserver\Libraries\REST_Controller;
+require (APPPATH.'/libraries/REST_Controller.php');
+class Transaksi extends REST_Controller{
     function __construct() {
         parent::__construct();
         $this->load->model(array("TransaksiModel","ItemTransaksiModel"));

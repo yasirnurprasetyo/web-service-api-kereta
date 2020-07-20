@@ -1,9 +1,7 @@
 <?php
-
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
-
-class Pelanggan extends Restserver\Libraries\REST_Controller
+use Restserver\Libraries\REST_Controller;
+require (APPPATH.'/libraries/REST_Controller.php');
+class Pelanggan extends REST_Controller
 {
 
     //Panggil PelangganModel
